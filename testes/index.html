@@ -37,6 +37,52 @@ window.onload = function(){
                 }
         }
 }
+
+function FormataData(Campo, teclapres)
+{
+var tecla = teclapres.keyCode;
+var vr = new String(Campo.value);
+vr = vr.replace("/", "");
+vr = vr.replace("/", "");
+tam = vr.length + 1;
+
+if (tecla != 9 && tecla ! = 8 )
+{
+if (tam > 2 && tam < 5)
+Campo.value = vr.substr(0, 2) + '/' + vr.substr(2, tam);
+if (tam >= 5 && tam <=10)
+Campo.value = vr.substr(0,2) + '/' + vr.substr(2,2) + '/' + vr.substr(4,4);
+
+}
+}
+
+function ConsisteData(str) {
+
+if (str.length!=10 || str.charAt(2)!="/" || str.charAt(5)!="/" )
+return false;
+if (ConsisteNumero(str.substring(0,2) + str.substring(3,5) + str.substring(6,10))==true)
+return false;
+
+var d = str.substring(0,2);
+var m = str.substring(3,5);
+var y = str.substring(6,10);
+
+if (d==0 || m==0 || y==0)
+return false;
+
+if (m>12) return false;
+if (m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m==12)
+var dmax = 31;
+else
+if (m==4 || m==6 || m==9 || m==11) dmax = 30;
+else
+if ((y%400==0) || (y%4==0 && y%100!=0)) dmax = 29;
+else dmax = 28;
+if (d>dmax) return false;
+if (y<1900) return false;
+return true;
+}
+&#91;/code&#93;</pre>
 </script>
 
 <!-- SMOOTH SCROLL -->
@@ -281,5 +327,6 @@ $(function() {
       </div>
     </div>
   </section>
+
 </body>
 </html>

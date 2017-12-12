@@ -46,6 +46,8 @@
 	<link rel="stylesheet" href="css/newresponsivel.css">
 	<!-- cliente logo -->
 	<script src="js/clientelogo.js"></script>
+	<!-- Validaçao do formSolicitar -->
+	<script src="js/validacao.js"></script>
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -118,6 +120,21 @@
 		function closeModal() {
 			$('#cartoonVideo').remove();
 			}
+			function mascaraData( campo, e ){
+				var kC = (document.all) ? event.keyCode : e.keyCode;
+				var data = campo.value;
+
+				if( kC!=8 && kC!=46 ){
+					if( data.length==2 ){
+						campo.value = data += '/';
+					}
+					else if( data.length==5 ){
+						campo.value = data += '/';
+					}
+					else
+						campo.value = data;
+				}
+			}
 		</script>
 
 		<script type="text/javascript">
@@ -146,30 +163,21 @@
 			</script>
 
 			<script type="text/javascript">
-					//inserir ponto e virgula em valores
-					function moeda(z) {
-					v = z.value;
-					v=v.replace(/\D/g,"") //permite digitar apenas números
-					v=v.replace(/[0-9]{12}/,"inválido") //limita pra máximo 999.999.999,99
-					v=v.replace(/(\d{1})(\d{8})$/,"$1.$2") //coloca ponto antes dos últimos 8 digitos
-					v=v.replace(/(\d{1})(\d{5})$/,"$1.$2") //coloca ponto antes dos últimos 5 digitos
-					v=v.replace(/(\d{1})(\d{1,2})$/,"$1,$2") //coloca virgula antes dos últimos 2 digitos
-					z.value = v;
-					}
 
-				   function mascaraData(campoData){
-				              var data = campoData.value;
-				              if (data.length == 2){
-				                  data = data + '/';
-				                  document.forms[0].data.value = data;
-				      return true;
-				              }
-				              if (data.length == 5){
-				                  data = data + '/';
-				                  document.forms[0].data.value = data;
-				                  return true;
-				              }
-				         }
+				function rolarSuave() {
+					$('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				}
 			</script>
 
 			<script type="application/ld+json">
@@ -344,11 +352,12 @@
 			                    <p id="TextoMar">É uma linha de crédito destinada a aposentados e pensionistas, funcionários,
 			                      servidores públicos, federais, estaduais e municipais.
 			                      Ativos, inativos.</p>
-														<p id="btnSoli"><a href="#titulo"  class="read-more">Solicite Agora <i class="icon-chevron-right"></i></a></p>
-			                      <p><a href="#credConsig" class="read-more sumir">Saiba Mais<i class="icon-chevron-right"></i></a></p>
+														<!-- <p id="btnSoli"><a href="#titulo"  class="read-more"><i class="icon-chevron-right"></i></a></p> -->
+			                      <p><a href="#credConsig" onclick="rolarSuave();" class="read-more sumir">Saiba Mais<i class="icon-chevron-right"></i></a></p>
 												</div>
-
 			                </div>
+											<div class="btnSolicite">
+											</div>
 			                <div class="col-md-3 .col-md-pull-9">
 			                  <div class="service-item">
 			                    <i class="ion-compass"></i>
@@ -365,6 +374,7 @@
 			                    <h4 id="txtCentro">REFINANCIAMENTO</h4>
 			                    <p id="TextoMar">Está operação é feita dentro da mesma instituição que o cliente já possui
 			                      empréstimo.</p>
+														<p id="btnSoli"><a href="#titulo"  class="read-more sumir"><i class="icon-chevron-right"></i></a></p>
 			                </div>
 			              </div>
 
@@ -538,7 +548,7 @@
 													  </div>
 													  <!-- Telefone -->
 													  <div class="form-group" id="tell">
-													    <input type="text" class="form-control" name="inputTelefone" id="inputTelefone" placeholder="Telefone*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+													    <input type="text" class="form-control" name="inputTelefone" id="inputTelefone" onkeypress="mascara(this,telefone)" maxlength="15" placeholder="Telefone*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 													    <span class="msg-erro msg-telefone"></span>
 													  </div>
 													</div>
@@ -546,11 +556,11 @@
 													<div class="subFormTwo">
 													  <!-- CPF -->
 													  <div class="form-group" id="cpf">
-													    <input type="text" class="form-control" name="inputCPF" id="inputCPF" placeholder="CPF" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+													    <input type="text" class="form-control" name="inputCPF" id="inputCPF" onkeypress="mascara(this,cpf)" maxlength="14" placeholder="CPF" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 													    <span class="msg-erro msg-cpf"></span>
 													  </div>
 													  <div class="form-group" id="nasc">
-														    <input type="text" class="form-control" name="inputDataNas" id="inputDataNas" placeholder="Data de nascimento*" OnKeyUp="mascaraData(this);" maxlength="10" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+														    <input class="form-control" name="inputDataNas" id="inputDataNas"  onkeypress="mascaraData( this, event )" placeholder="Data de nascimento*" maxlength="10" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 													    <span class="msg-erro msg-cpf"></span>
 													  </div>
 													  <div class="form-group" id="benef">
