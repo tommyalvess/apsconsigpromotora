@@ -1,0 +1,74 @@
+<div class="col-md-6 col-md-push-6 animate-box">
+  <form id="contatoForm" name="contatoForm" method="post">
+    <div class="form-group">
+      <input type="text" class="form-control" name="inputNome" id="inputNome" placeholder="Nome Completo" required onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+      <span class='msg-erro msg-nome'></span>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email" required onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+      <span class='msg-erro msg-email'></span>
+    </div>
+    <div class="form-group">
+      <label>Setor</label>
+      <select class="form-control" name="setor">
+        <option value="0">Atendimento</option>
+        <!-- <option value="1">Formalização *para envio de documentos</option> -->
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="inputTelefone" id="inputTelefone" placeholder="Telefone" required onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+      <span class='msg-erro msg-telefone'></span>
+    </div>
+    <div class="form-group">
+      <textarea name="inputMensagem" class="form-control" rows="6" placeholder="Mensagem" required onfocus="if(this.value == '') this.value='';" onblur="if(this.value == '') this.value='';" ></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning" onclick="return checkForm()">Enviar</button>
+  </form>
+</div>
+
+
+
+
+<form id="contatoForm" name="contatoForm" method="post">
+  <!-- Nome -->
+  <div class="form-group">
+    <input type="text" class="form-control" name="inputNome" id="inputNome" placeholder="Nome Completo*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <span class="msg-erro msg-nome"></span>
+  </div>
+  <!-- Email -->
+  <div class="form-group">
+    <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <span class="msg-erro msg-email"></span>
+  </div>
+  <!-- Valor -->
+  <div class="form-group">
+    <input type="text" class="form-control input-sm" maxlength="14" onKeyUp="moeda(this);" type="text" name="inputValor" id="inputValor" placeholder="Qual valor desejado?*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <span class="msg-erro msg-valor"></span>
+  </div>
+  <!-- Convenio -->
+  <div class="form-group">
+    <select class="form-control" name="setor">
+      <option value="0">Qual seu convênios?*</option>
+      <option value="1">INSS</option>
+    </select>
+  </div>
+  <!-- Telefone -->
+  <div class="form-group">
+    <input type="text" class="form-control" name="inputTelefone" id="inputTelefone" placeholder="Telefone*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <span class="msg-erro msg-telefone"></span>
+  </div>
+  <!-- CPF -->
+  <div class="form-group">
+    <input type="text" class="form-control" name="inputCPF" id="inputCPF" placeholder="CPF" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <span class="msg-erro msg-cpf"></span>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="inputDataNas" id="inputDataNas" placeholder="Data de nascimento*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <span class="msg-erro msg-cpf"></span>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="inputBeneficio" id="inputBeneficio" placeholder="Numero do Benefício*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <span class="msg-erro msg-cpf"></span>
+  </div>
+  <button type="submit" class="btn btn-warning" onclick="return checkForm()">Enviar Proposta</button>
+</form>

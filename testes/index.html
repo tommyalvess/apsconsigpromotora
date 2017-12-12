@@ -1,0 +1,285 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<script type="text/javascript">
+function id( el ){
+        return document.getElementById( el );
+}
+function hide_all(){
+        var divs = id('serviHide').getElementsByClassName('sumir');
+        for( var i=0; i<divs.length; i++ )
+        {
+                divs[i].style.display = 'none';
+        }
+}
+/* http://www.javascriptkit.com/jsref/event.shtml */
+function disablelink( e ){
+        var evt = window.event || e
+        if (evt.preventDefault) //supports preventDefault?
+                evt.preventDefault()
+        else //IE browser
+                return false
+}
+window.onload = function(){
+        hide_all();
+        var as = id('serviHide').getElementsByTagName('a');
+        for( var i=0; i<as.length; i++ )
+        {
+                as[i].onclick = function( e ){
+                        hide_all();
+                        var id_el = this.href.split('#')
+
+                        id( id_el[1] ).style.display = 'block';
+                        return disablelink( e );
+                }
+        }
+}
+</script>
+
+<!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
+
+</head>
+<body>
+  <section id="service"  data-section="servico">
+    <div id="serviHide">
+      <div class="container">
+        <div class="row">
+            <div class="row row-pb-md">
+              <div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn"><br>
+                <h1 id="txtAjust">Nossos Serviços</h1>
+                <p class="sub"></p>
+              </div>
+            </div>
+
+        <div class="row">
+                <div id="consigCenter"class="col-md-3 .col-md-pull-9">
+                  <div class="service-item">
+                    <i class="ion-compass"></i>
+                    <h4 id="txtCentro">CRÉDITO CONSIGNADO</h4>
+                    <p id="TextoMar">É uma linha de credito destinada a aposentados e pensionistas, funcionários,
+                      servidores públicos, federais, estaduais e municipais.
+                      Ativos, inativos.</p>
+                      <p><a href="#credConsig" class="read-more">Saiba Mais<i class="icon-chevron-right"></i></a></p>
+                  </div>
+                  <p id="btnSoli"><a href="#solicitar" class="read-more scrollSuave">Solicite Agora <i class="icon-chevron-right"></i></a></p>
+
+                </div>
+                <div class="col-md-3 .col-md-pull-9">
+                  <div class="service-item">
+                    <i class="ion-compass"></i>
+                    <h4 id="txtCentro">CARTÃO DE CRÉDITO</h4>
+                    <p id="TextoMar">O cartão do aposentado e pensionista. Além de ter as melhores taxas de juros do mercado,
+                      você pode contar com benefícios e vantagens exclusivas.</p>
+                      <p><a href="#credCartao" class="read-more">Saiba Mais<i class="icon-chevron-right"></i></a></p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 .col-md-pull-9">
+                  <div class="service-item">
+                    <i class="ion-image"></i>
+                    <h4 id="txtCentro">PORTABILIDADE</h4>
+                    <p id="TextoMar">A Portabilidade de Crédito permite a transferência de empréstimos e financiamentos
+                      de outros bancos ou financeiras que possuem taxas excessivas para um banco com
+                      taxas mais flexíveis e justas.</p>
+                      <p><a href="#credPort" class="read-more">Saiba Mais<i class="icon-chevron-right"></i></a></p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 .col-md-pull-9">
+                  <div class="service-item">
+                    <i class="ion-earth"></i>
+                    <h4 id="txtCentro">REFINANCIAMENTO</h4>
+                    <p id="TextoMar">Está operação é feita dentro da mesma instituição que o cliente já possui
+                      empréstimo.</p>
+                    <p><a href="#credRef" class="read-more">Saiba Mais<i class="icon-chevron-right"></i></a></p>
+                </div>
+              </div>
+
+          <section>
+            <!-- Area de inf  -->
+              <div class="col-md-8 sumir" id="credConsig">
+                <h2 id="cred">teste</h2>
+                <h2 id="txtC">Crédito Consignado</h2>
+                <p id="TextoMar">Trata-se de um Crédito com taxas de juros especiais e prestações debitadas diretamente
+                  na folha de pagamento ou benefício, sem necessidade de avalista. Sua contratação é rápida,
+                  sem burocracia. Não é necessário possuir Conta Corrente.</p>
+                <p id="TextoMar">Essa modalidade de Crédito pode ser contratada por Aposentados e Pensionistas do INSS,
+                  por Funcionários Públicos Municipais, Estaduais e Federais e Servidores Públicos das
+                  Forças Armadas do Brasil. Também podem ser beneficiados por essa modalidade de Crédito,
+                  os Funcionários de Empresas Privadas que possuem o convênio.</p>
+                <p id="TextoMar"><b>Solicite uma consulta e faremos o melhor para você!</b></p>
+                <p id="TextoMar"><b>Benefícios:</b></p>
+                  <ul>
+                    <li class="subTTec">Facilidade na contratação, sem necessidade de avalista</li>
+                    <li class="subTTec">Segurança Rapidez na liberação do dinheiro</li>
+                    <li class="subTTec">Comodidade (parcelas descontadas diretamente na folha de pagamento)</li>
+                    <li class="subTTec">Taxas Especiais e bem atrativas</li>
+                    <li class="subTTec">Parcelamento em até 72 meses (dependendo da aprovação do Convênio)</li>
+                    <li class="subTTec">Não é necessário possuir conta corrente</li>
+                    <li class="subTTec">Sem necessidade de ir até agências bancárias ou financeiras.</li>
+                  </ul>
+                  <p id="btnSol"><a href="#titulo" class="read-more scrollSuave">Solicite Agora <i class="icon-chevron-right"></i></a></p>
+              </div>
+          </section>
+
+          <!-- Area de inf  -->
+            <div class="col-md-8 sumir" id="credCartao">
+              <h2 id="txtC">Cartão de Crédito</h2>
+              <p id="TextoMar">Com os cartões de crédito fica muito mais fácil realizar compras e pagar contas.
+                Além de ter as melhores taxas de juros do mercado, você pode contar com benefícios
+                e vantagens exclusivas.
+                Para servidores públicos, aposentados e pensionistas (consulte se o seu órgão pagador
+                possui convênio), o BMG oferece o BMGCard, cartão de crédito consignado com a bandeira
+                MasterCard, que permite o desconto do pagamento mínimo diretamente na folha ou no
+                benefício.</p>
+
+                <p id="TextoMar"><b>Conheça as vantagens:</b></p>
+                  <ul>
+                    <li class="subTTec">5% a mais de margem</li>
+                    <li class="subTTec">Cartão Internacional</li>
+                    <li class="subTTec">Bandeiras Visa e MasterCard</li>
+                    <li class="subTTec">Sem taxa de anuidade</li>
+                    <li class="subTTec">Sem taxa de aquisição</li>
+                    <li class="subTTec">Sem multa por atraso</li>
+                    <li class="subTTec">Sem consulta ao SPC/Serasa</li>
+                    <li class="subTTec">Melhor taxa de juros, 3% na rotativa</li>
+                    <li class="subTTec">Até 98% do limite diponivel para saque</li>
+                    <li class="subTTec">Aceito em todos estabelecimentos</li>
+                    <li class="subTTec">1/3 dos juros dos cartões convencionais</li>
+                  </ul>
+                <p id="btnSol"><a href="#solicitarCartao" class="read-more scrollSuave">Solicite Agora <i class="icon-chevron-right"></i></a></p>
+            </div>
+          <!-- Area de inf  -->
+            <div class="col-md-8 sumir" id="credPort" >
+              <h2 id="txtC">Portabilidade de Crédito</h2>
+              <p id="TextoMar">A Portabilidade de Crédito permite a transferência de empréstimos e financiamentos de
+                outros bancos ou financeiras que possuem taxas excessivas para um banco com taxas mais
+                flexíveis e justas. O valor da parcela pode diminuir e por resolução do Banco Central
+                do Brasil, o prazo do contrato permanece o mesmo.</p>
+              <p id="TextoMar">Simplifique sua vida: organize-se e planeje melhor o seu futuro. Centralize
+                todas as suas despesas em um só lugar.</p>
+              <p id="TextoMar">Sujeito a análise de cadastro e crédito e averbação da margem consignável  no momento
+                da contratação da operação.</p>
+              <p id="TextoMar">Na operação há incidência de juros e IOF – Imposto sobre Operações Financeiras e não
+                há cobrança de tarifas. Para operações trazidas de outros bancos (portabilidade de crédito),
+                não há incidência de IOF.</p>
+              <h3 id="TextoMar">Como funciona?</h3>
+              <p id="TextoMar">Com a portabilidade, você transfere o seu empréstimo para nós, como utilizamos taxas
+                exclusivas para portabilidade, o valor do seu saldo devedor (empréstimo antigo) cai
+                gerando uma diferença significativa, que pode ser utilizada para diminuir a parcela ou
+                então pegar a diferença em dinheiro. O prazo do empréstimo se mantém o mesmo independente
+                da opção de uso da diferença de valor.</p>
+            </div>
+
+
+
+          </div>
+          <!-- fim da servHide -->
+
+        </div>
+        <!-- fim da row 1 -->
+      </div>
+      <!-- fim container -->
+    </div>
+  <!-- fim da div hide -->
+  </section>
+  <!-- Area de formalização -->
+  <section id="gtco-contact" data-section="formProposta">
+    <div class="container">
+      <div class="row row-pb-md">
+        <div class="col-md-8 col-md-offset-2 heading animate-box fadeIn animated-fast" data-animate-effect="fadeIn">
+          <h1 id="titulo"><b id="solicitar">Quanto você precisa para realizar seu sonho?</b></h1>
+          <!-- <p class="subtle-text animate-box" data-animate-effect="fadeIn">Contato</p> -->
+        </div>
+      </div>
+      <div class="row" id="contato">
+        <div class="col-md-4 animate-box fadeInUp animated-fast">
+          <p id="infSolicita">Solicitar seu Empréstimo Consignado com a Aps Consig é super fácil.<br>
+            Você só precisa preencher o formulário e aguardar nossa avaliação. <br>
+            Todo o processo é rápido e sem burocracia!</p>
+        </div>
+        <!-- Formulario  -->
+        <div class="formSolicitar">
+          <div class="col-md-8  animate-box fadeInUp animated-fast">
+              <div class="gtco-contact-info">
+                  <form id="contatoForm" name="contatoForm" method="post">
+                  <!-- Nome -->
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="inputNome" id="inputNome" placeholder="Nome Completo*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                    <span class="msg-erro msg-nome"></span>
+                  </div>
+                  <!-- Email -->
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                    <span class="msg-erro msg-email"></span>
+                  </div>
+                  <div class="subFormOne">
+                    <!-- Valor -->
+                    <div class="form-group" id="valor">
+                      <input type="text" maxlength="14" onKeyUp="moeda(this);" type="text" name="inputValor" class="form-control" id="inputValor" placeholder="Qual valor desejado?*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                      <span class="msg-erro msg-valor"></span>
+                    </div>
+                    <!-- Convenio -->
+                    <div class="form-group" id="setor">
+                      <select class="form-control" id="inputSetor" name="setor">
+                        <option value="0">Qual seu convênios?*</option>
+                        <option value="1">INSS - Aposentados e Pensionistas</option>
+                      </select>
+                    </div>
+                    <!-- Telefone -->
+                    <div class="form-group" id="tell">
+                      <input type="text" class="form-control" name="inputTelefone" id="inputTelefone" placeholder="Telefone*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                      <span class="msg-erro msg-telefone"></span>
+                    </div>
+                  </div>
+                  <!-- fin da sub1  -->
+                  <div class="subFormTwo">
+                    <!-- CPF -->
+                    <div class="form-group" id="cpf">
+                      <input type="text" class="form-control" name="inputCPF" id="inputCPF" placeholder="CPF" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                      <span class="msg-erro msg-cpf"></span>
+                    </div>
+                    <div class="form-group" id="nasc">
+                        <input type="text" class="form-control" name="inputDataNas" id="inputDataNas" placeholder="Data de nascimento*" OnKeyUp="mascaraData(this);" maxlength="10" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                      <span class="msg-erro msg-cpf"></span>
+                    </div>
+                    <div class="form-group" id="benef">
+                      <input type="text" class="form-control" name="inputBeneficio" id="inputBeneficio" placeholder="Numero do Benefício*" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                      <span class="msg-erro msg-cpf"></span>
+                    </div>
+                  </div>
+                  <!-- fim da sub2 -->
+                  <div class="btnEnviar">
+                    <button type="submit" class="btn btn-warning" id="btnSolicitar" onclick="return checkForm()"><span class="btnText">Enviar Proposta</spam></button>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>

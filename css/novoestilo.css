@@ -1,0 +1,754 @@
+#gtco-footer {
+    background: #dae5ef !important;
+}
+
+#subAjust{
+  margin-bottom: -71px;
+  margin-top: 21px;
+}
+#tituloresp{
+  width: 100%;
+}
+
+/*map responsivel*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*Cor do traço sub*/
+.heading .sub:after {
+    background: #055393;
+}
+
+/*Area do carroseu*/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin-bottom: 18px !important;
+}
+
+.glyphicon-chevron-right:before {
+    content: "\e080";
+    visibility: hidden;
+}
+
+.glyphicon-chevron-left:before {
+  content: "\e080";
+  visibility: hidden;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 60px !important;
+    overflow: hidden;
+}
+
+/*Efeito para os Desktop*/
+#tituloresp{
+  width: 100%;
+}
+    #btnSol{
+        margin-left: 26px;
+        font-size: 23px;
+    }
+    #btnSol a{
+      color: #055393;
+    }
+
+  .item{
+    background-image: url("img_1.jpg");
+    background-repeat: no-repeat, repeat;
+  }
+  #titulo{
+
+  }
+
+  #contatoForm{
+    margin-top: -71px;
+  }
+  #infSolicita{
+    margin-top: -46px;
+    font-style: italic;
+
+  }
+
+ #notificacao{
+  color: #fef6f6;
+  font-size: 52px;
+  text-align: center;
+}
+================================================================================
+/*Carousel parceiros*/
+
+.carousel-control {
+  padding-top:10%;
+  width:5%;
+}
+================================================================================
+
+bootstrap.min.css:5
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/***** Modal *****/
+
+.modal-backdrop.in {
+    filter: alpha(opacity=7);
+    opacity: 0.7;
+}
+
+.modal-content {
+    background: none;
+    border: 0;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+.modal-body {
+    padding: 0 25px 25px 25px;
+}
+
+.modal-header {
+    padding: 25px 25px 15px 25px;
+    text-align: right;
+}
+
+.modal-header, .modal-footer {
+    border: 0;
+}
+
+.modal-header .close {
+    float: none;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: none;
+    opacity: 1;
+}
+================================================================================
+/*.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}*/
+
+/*Cor das letras da barra de menu*/
+.gtco-nav.scrolled ul li.active > a {
+    color: #60a9c8 !important;
+}
+
+/*Cor quando o menu está sem rolagem*/
+.gtco-nav ul li.btn-cta a span {
+    border: none !important;
+    background: rgba(142, 188, 186, 0.1);
+    padding: 4px 20px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+}
+/*Area de contato*/
+#gtco-contact .heading .subtle-text {
+    position: absolute;
+    bottom: -1em;
+    left: -202px;
+    text-transform: uppercase;
+    font-size: 208px;
+    color: #F8F8F8;
+    font-weight: 900;
+    z-index: -1;
+    line-height: 1;
+}
+
+/*Cor dos icones do contato*/
+.gtco-contact-info ul li:before {
+    color: #f9a730;
+    position: absolute;
+    left: 0;
+    top: .05em;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*Cor de todos os links*/
+a {
+    color: #055393;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+/*Cor dos icons de rede sociais*/
+.gtco-social-icons li a {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    color: #8ebcba;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Cor do botão enviar*/
+.btn-default {
+    background: #8ebcba;
+    color: #fff;
+    border: 2px solid #8ebcba;
+}
+
+/*Titulo do Sobre nos*/
+.heading-colored {
+    color: #cb8f51 !important;
+}
+
+/*Arrumado o espaçamento do sobre nós*/
+#gtco-about, #gtco-practice-areas, #gtco-our-team, #gtco-contact {
+    padding: 5em 0;
+    clear: both;
+}
+
+.heading {
+    text-align: center;
+    margin-top: -159px;
+    margin-bottom: -28px;
+}
+
+.heading h1 {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -12px;
+  margin-top: 161px;
+}
+
+#contato{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 4px;
+    margin-top: 116px;
+}
+.well {
+  padding: 19px;
+  margin-bottom: 0!important;
+  background-color: snow;
+  border: none !important;
+  border-radius: unset !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.carousel-control.right{
+  visibility: hidden;
+}
+
+.carousel-control.left{
+  visibility: hidden;
+}
+
+#parceiros{
+  margin-bottom: 31px;
+    margin-top: 55px;
+    text-align: center;
+}
+.gtco-contact-info {
+    /* margin-bottom: 32px; */
+    margin-top: 36px;
+    /* float: left; */
+    /* width: 100%; */
+    /* position: relative; */
+}
+
+/*--
+	content Start
+--*/
+#testimonial {
+  padding: 100px 0;
+}
+#testimonial .block h2 {
+  line-height: 27px;
+  color: #5C5C5C;
+  padding-top: 110px;
+}
+#testimonial .block p {
+  padding-top: 50px;
+  color: #7B7B7B;
+}
+#testimonial .counter-box li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin: 30px 0 30px;
+}
+#testimonial .counter-box li i {
+  font-size: 35px;
+}
+#testimonial .counter-box li h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#testimonial .counter-box li span {
+  color: #555;
+}
+#testimonial .testimonial-carousel {
+  text-align: center;
+  width: 75%;
+  border: 1px solid #DEDEDE;
+  padding: 24px;
+  margin: 0 auto;
+}
+#testimonial .testimonial-carousel img {
+  padding-bottom: 38px;
+}
+#testimonial .testimonial-carousel p {
+  line-height: 28px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+#testimonial .testimonial-carousel .user img {
+  padding-bottom: 0px;
+  border-radius: 500px;
+}
+#testimonial .testimonial-carousel .user p {
+  padding-bottom: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #353241;
+}
+#testimonial .testimonial-carousel .user p span {
+  display: block;
+  color: #353241;
+  font-weight: 600;
+}
+#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {
+  border: 1px solid #1D1D1D;
+  border-radius: 500px;
+  display: inline-block;
+  height: 10px;
+  margin-right: 15px;
+  width: 10px;
+}
+#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {
+  background: #5C5C5C;
+  font-size: 30px;
+  display: inline-block;
+  border: 0px;
+}
+================================================================================
+footer .footer-manu {
+  padding-bottom: 25px;
+}
+footer .footer-manu ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer .footer-manu ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+footer .footer-manu ul li a {
+  display: inline-block;
+  color: #494949;
+}
+footer .footer-manu ul li a:hover {
+  color: #000;
+}
+
+================================================================================
+/*are da nav*/
+
+.gtco-nav {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1001;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin-bottom: 19px !important;
+    }
+
+    .carousel {
+        margin-top: 73px !important;
+      }
+  .gtco-nav {
+    padding: 20px 0;
+  }
+
+  #resT{
+    font-size: 18px;
+  }
+  #emailResp{
+    font-size: 14px;
+    margin-left: -18px;
+  }
+  #txtCentro{
+      text-align: center;
+    }
+  #txtAjust{
+    font-size: 28px !important;
+  }
+  #TextoMar{
+    text-align: left;
+    margin-left: 23px;
+    margin-right: 4px;
+  }
+
+
+  }
+  #txtC{
+    font-size: 18px;
+    text-align: center;
+  }
+  #contato {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 4px;
+    margin-top: 116px;
+    font-size: 20px;
+}
+}
+
+.gtco-nav #gtco-logo {
+  font-size: 30px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.gtco-nav #gtco-logo em {
+  color: #fff;
+  font-weight: 100;
+  font-style: normal;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.gtco-nav #gtco-logo a {
+  padding: 0px 10px;
+  color: #fff;
+  font-weight: 700;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .gtco-nav .menu-1, .gtco-nav .menu-2 {
+    display: none;
+  }
+}
+.gtco-nav ul {
+  padding: 0;
+  margin: 1px 0 0 0;
+}
+.gtco-nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+.gtco-nav ul li a {
+  font-size: 12px;
+  padding: 30px 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400 !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
+  color: #fff;
+}
+.gtco-nav ul li.has-dropdown {
+  position: relative;
+}
+.gtco-nav ul li.has-dropdown .dropdown {
+  width: 130px;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1002;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+.gtco-nav ul li.has-dropdown .dropdown:before {
+  bottom: 100%;
+  left: 40px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #fff;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+
+==========================================================
+.gtco-nav ul li.has-dropdown .dropdown li {
+  display: block;
+  margin-bottom: 7px;
+}
+.gtco-nav ul li.has-dropdown .dropdown li:last-child {
+  margin-bottom: 0;
+}
+.gtco-nav ul li.has-dropdown .dropdown li a {
+  padding: 2px 0;
+  display: block;
+  color: #999999;
+  line-height: 1.2;
+  text-transform: none;
+  font-size: 15px;
+}
+.gtco-nav ul li.has-dropdown .dropdown li a:hover {
+  color: #000;
+}
+.gtco-nav ul li.has-dropdown .dropdown li.active > a {
+  color: #000 !important;
+}
+.gtco-nav ul li.has-dropdown:hover a, .gtco-nav ul li.has-dropdown:focus a {
+  color: #fff;
+}
+.gtco-nav ul li.btn-cta a {
+  color: #fff;
+}
+.gtco-nav ul li.btn-cta a span {
+  border: none !important;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+.gtco-nav ul li.btn-cta a:hover span {
+  background: #f9a730;
+  color: #fff;
+}
+.gtco-nav ul li.active > a {
+  color: #fff !important;
+}
+.gtco-nav.scrolled {
+  background: #fff;
+  webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+}
+.gtco-nav.scrolled ul {
+  padding: 0;
+  margin: 1px 0 0 0;
+}
+.gtco-nav.scrolled ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+.gtco-nav.scrolled ul li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.gtco-nav.scrolled ul li a:hover {
+  color: black;
+}
+.gtco-nav.scrolled ul li.btn-cta a {
+  color: #fff;
+}
+.gtco-nav.scrolled ul li.btn-cta a span {
+  border: none !important;
+  background: #055393;
+  padding: 4px 20px;
+  color: #fff;
+}
+.gtco-nav.scrolled #gtco-logo em, .gtco-nav.scrolled #gtco-logo a {
+  color: #000;
+}
+================================================================================
+
+
+.gtco-nav-toggle {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
+  background: #444;
+}
+.gtco-nav-toggle:hover, .gtco-nav-toggle:focus, .gtco-nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+.gtco-nav-toggle i {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  color: #252525;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #252525;
+  transition: all .2s ease-out;
+}
+.gtco-nav-toggle i::before, .gtco-nav-toggle i::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #252525;
+  position: absolute;
+  left: 0;
+  transition: all .2s ease-out;
+}
+.gtco-nav-toggle.gtco-nav-white > i {
+  color: #fff;
+  background: #fff;
+}
+.gtco-nav-toggle.gtco-nav-white > i::before, .gtco-nav-toggle.gtco-nav-white > i::after {
+  background: #fff;
+}
+
+.gtco-nav-toggle i::before {
+  top: -7px;
+}
+
+.gtco-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.gtco-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.gtco-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+
+.gtco-nav-toggle.active i {
+  background: transparent;
+}
+
+.gtco-nav-toggle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.gtco-nav-toggle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.gtco-nav-toggle {
+  position: fixed;
+  right: 0px;
+  top: 10px;
+  z-index: 21;
+  padding: 6px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  height: 44px;
+  width: 44px;
+  z-index: 2001;
+  border-bottom: none !important;
+}
+@media screen and (max-width: 768px) {
+  .gtco-nav-toggle {
+    display: block;
+  }
+}
+================================================================================
+#page {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.offcanvas #page:after {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+}
+
+.gtco-cover > .container {
+  position: relative;
+  z-index: 10;
+}
+===============================================================================

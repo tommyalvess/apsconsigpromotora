@@ -1,0 +1,300 @@
+
+/*Responsivo Formulario*/
+@media (min-width: 1440px) {
+  .formSolicitar .subFormTwo {
+    margin-left: 54%;
+    margin-top: -33%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  #respImg{
+    margin-left: 70px;
+  }
+    #btnSoli {
+      visibility: hidden;
+    }
+    .formSolicitar .subFormTwo {
+      margin-left: 54% !important;
+    }
+    #saibaConsig {
+      text-align: left;
+      margin-left: 1.5%;
+      margin-right: 4px;
+    }
+    #saibaCartao {
+        text-align: left;
+        margin-left: 26.5%;
+        margin-top: -57px;
+    }
+    #saibaPort {
+        margin-top: -58px;
+        margin-left: 51%;
+    }
+}
+
+@media (min-width: 768px) {
+  .embed-responsive {
+      position: relative;
+      display: block;
+      height: 303px;
+      padding: 60px !important;
+      overflow: hidden;
+    }
+    resTitulo{
+
+    }
+    #cartoonVideo {
+        width: 100%;
+        height: 305px;
+    }
+          .subFormOne #valor{
+          width: 50%;
+
+        }
+
+        .subFormOne #setor{
+          width: 50%;
+
+        }
+
+        .subFormOne #tell{
+          width: 50%;
+
+        }
+
+        .formSolicitar .subFormTwo {
+          margin-left: 375px;
+          margin-top: -240px;
+        }
+
+
+      #infSolicita{
+        margin-bottom: 55px;
+      }
+      .formSolicitar{
+        width: 100% !important;
+      }
+      .btnEnviar #btnSolicitar{
+        width: 100%;
+      }
+
+      .btn-warning {
+        padding: 10px 35%;
+        position: relative;
+        background: #055393;
+        color: #fff;
+        border: 2px solid rgba(121, 121, 121, 0.19);
+      }
+      #gtco-contact .form-control {
+        height: 50px;
+        font-size: 18px;
+
+      }
+
+}
+
+@media (max-width: 425px) {
+  #titulo {
+      text-align: left;
+      font-size: 27px;
+      margin-left: 13px;
+  }
+  .embed-responsive {
+      position: relative;
+      display: block;
+      height: 310px;
+      padding: 60px !important;
+      overflow: hidden;
+  }
+  .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 60px !important;
+    overflow: hidden;
+  }
+  .formSolicitar{
+    width: 91%;
+  }
+  .btnEnviar #btnSolicitar{
+    width: 100%;
+  }
+
+  .btn-warning {
+    padding: 10px 35%;
+    position: relative;
+    background: #055393;
+    color: #fff;
+    border: 2px solid rgba(121, 121, 121, 0.19);
+  }
+  #gtco-contact .form-control {
+    height: 50px;
+    font-size: 18px;
+
+  }
+}
+
+@media (max-width: 320px) {
+  .btnText{
+    text-align: center;
+    margin-left: -24px;
+  }
+  #gtco-contact .form-control {
+    height: 50px;
+    font-size: 18px;
+
+  }
+  #resT {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #respImg{
+    margin-left: 70px;
+  }
+  #saibaConsig{
+
+  }
+  #saibaCartao{
+
+  }
+  resTitulo{
+
+  }
+}
+
+@media only screen and (max-width: 991px)  {
+  .sumir{
+    visibility: hidden;
+  }
+  #consigCenter{
+    width: 100%;
+  }
+
+  #btnSoli {
+    font-size: 22px;
+    width: 100%;
+    margin-left: 7%;
+  }
+
+  #btnSoli a{
+    color: #055393;
+  }
+  #saibaConsig{
+    visibility: hidden;
+  }
+  #saibaCartao{
+    visibility: hidden;
+  }
+  #saibaPort{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 770px)  {
+  #btnSoli {
+    font-size: 22px;
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .btn-warning {
+    padding: 10px 35%;
+    position: relative;
+    background: #055393;
+    color: #fff;
+    border: 2px solid rgba(121, 121, 121, 0.19);
+  }
+  .btnEnviar #btnSolicitar{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #resT {
+        font-size: 28px;
+    }
+  .btn-warning {
+    padding: 10px 35%;
+    position: relative;
+    background: #055393;
+    color: #fff;
+    border: 2px solid rgba(121, 121, 121, 0.19);
+  }
+  .btnEnviar #btnSolicitar{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  #gtco-footer {
+    width: 100%;
+  }
+  #imgfooter{
+    margin-left: 37px;
+    margin-right: 34px;
+    width: 217px;
+  }
+  #resT {
+    font-size: 26px;
+  }
+  #respImg{
+    margin-left: 0px;
+  }
+  #titulo{
+  }
+  .btn-warning {
+    padding: 10px 35%;
+    position: relative;
+    background: #055393;
+    color: #fff;
+    border: 2px solid rgba(121, 121, 121, 0.19);
+  }
+  .btnEnviar #btnSolicitar{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .btn-warning {
+    padding: 10px 35%;
+    position: relative;
+    background: #055393;
+    color: #fff;
+    border: 2px solid rgba(121, 121, 121, 0.19);
+  }
+  .btnEnviar #btnSolicitar{
+    width: 100%;
+  }
+  #resT {
+    font-size: 21px;
+    text-align: left;
+    margin-left: 14px;
+    margin-right: 16px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+  #resT {
+    font-size: 21px;
+    text-align: left;
+    margin-left: 14px;
+    margin-right: 16px;
+    }
+  .btn-warning {
+    padding: 10px 35%;
+    position: relative;
+    background: #055393;
+    color: #fff;
+    border: 2px solid rgba(121, 121, 121, 0.19);
+  }
+  .btnEnviar #btnSolicitar{
+    width: 100%;
+  }
+}
